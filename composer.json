@@ -1,0 +1,24 @@
+{
+  "name": "galantom/galantom-api-php",
+  "description": "Official PHP Client Library for the Galantom Web API Edit",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gabriel Solomon",
+      "email": "hello@gabrielsolomon.ro"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Galantom\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.0",
+    "bytic/framework": "^1.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*",
+    "codeception/mockery-module": "0.2.*"
+  }
+}
