@@ -14,7 +14,6 @@ use GuzzleHttp\Psr7\Response;
  */
 class GalantomClientTest extends AbstractTest
 {
-
     public function testEmptyFactory()
     {
         $galantom = GalantomClient::factory();
