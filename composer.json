@@ -1,6 +1,15 @@
 {
   "name": "galantom/galantom-api-php",
   "description": "Official PHP Client Library for the Galantom Web API Edit",
+  "type": "library",
+  "keywords": [
+    "library",
+    "Galantom",
+    "Fundraising",
+    "guzzle",
+    "guzzlehttp",
+    "guzzle-services"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -10,15 +19,22 @@
   ],
   "autoload": {
     "psr-4": {
-      "Galantom\\": "src/"
+      "GalantomApi\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GalantomApi\\Tests\\": "tests/",
+      "GalantomApi\\Tests\\Fixtures\\": "tests/fixtures"
     }
   },
   "require": {
-    "php": "^7.0",
-    "bytic/framework": "^1.0"
+    "php": ">=5.6",
+    "guzzlehttp/guzzle-services": "^1.1",
+    "symfony/config": "^3.3"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "2.*",
-    "codeception/mockery-module": "0.2.*"
+    "phpunit/phpunit": "^6.2",
+    "squizlabs/php_codesniffer": "^3.0"
   }
 }
