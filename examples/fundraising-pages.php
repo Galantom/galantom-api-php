@@ -18,10 +18,10 @@ print "createClient\n";
 /** @var \GuzzleHttp\Command\Result $response */
 $response = $client->getPageDonations(['id' => 327]);
 
-if ($response['response']['code'] !== '200') {
-    die($response['response']['message']);
-}
-
-foreach ($response['donations'] as $donation) {
-    echo $donation['id'].'|';
+if ($response['response']['code'] === '200') {
+    foreach ($response['donations'] as $donation) {
+        echo $donation['id'] . '|';
+    }
+} else {
+    echo $response['response']['message'];
 }
