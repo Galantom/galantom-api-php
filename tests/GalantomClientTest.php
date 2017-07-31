@@ -40,7 +40,7 @@ class GalantomClientTest extends AbstractTest
         $client = $this->getClient($handler);
 
         $command = $client->getCommand($method, $params);
-        $result = $client->execute($command);
+        $client->execute($command);
 
         $request = $queue->getLastRequest();
 
@@ -48,13 +48,6 @@ class GalantomClientTest extends AbstractTest
 
         //Resource Url
         $url = parse_url($request->getUri());
-        $body = json_decode($request->getBody()->getContents(), true);
-
-        //Make sure the projectId is set properly in the url
-//        static::assertContains($client->getProjectId(), explode('/', $url['path']));
-
-        //Make sure the version is set properly in the url
-//        static::assertContains($client->getVersion(), explode('/', $url['path']));
 
         $operation = $client->getDescription()->getOperation($method);
         //Make sure the url has the right method
