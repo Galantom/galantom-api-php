@@ -40,6 +40,7 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/command" />
       <path value="$PROJECT_DIR$/vendor/symfony/config" />
       <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
     </include_path>
   </component>
   <component name="PhpUnit">

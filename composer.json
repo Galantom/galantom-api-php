@@ -34,6 +34,7 @@
     "symfony/config": "^3.3"
   },
   "require-dev": {
+    "vlucas/phpdotenv": "^2.3",
     "phpunit/phpunit": "^6.2",
     "squizlabs/php_codesniffer": "^3.0"
   }

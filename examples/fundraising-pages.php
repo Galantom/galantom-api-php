@@ -2,8 +2,6 @@
 
 require dirname(__FILE__) . '/init.php';
 
-require dirname(__DIR__) . '/vendor/autoload.php';
-
 use GalantomApi\GalantomClient;
 
 // Get the client

@@ -1,7 +1,11 @@
 <?php
 
+require dirname(__DIR__) . '/vendor/autoload.php';
+
 /**
- * Fill in your toggl api key and the examples in the /examples directory should work
+ * Fill in your api token and the examples in the /examples directory should work
  */
 
-$galantom_api_token = '8053b447b8ee03575ec3b2c3c3ef181b699db993';
+(new \Dotenv\Dotenv(dirname(__DIR__)))->load();
+
+$galantom_api_token = $_ENV['API_TOKEN'];
