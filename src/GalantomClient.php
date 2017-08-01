@@ -4,15 +4,21 @@ namespace GalantomApi;
 
 use GalantomApi\Description\PhpLoader;
 use GuzzleHttp\Client;
-use GuzzleHttp\Command\Guzzle\GuzzleClient;
 use GuzzleHttp\Command\Guzzle\Description;
+use GuzzleHttp\Command\Guzzle\GuzzleClient;
+use GuzzleHttp\Command\Result as GuzzleResult;
 use Symfony\Component\Config\FileLocator;
 
 /**
  * Class GalantomClient
  * @package GalantomApi
  *
- * @method array getPageDonations(array $args = []) {@command GalantomClient getPageDonations}
+ * @method GuzzleResult getPageDonations(array $args = []) {
+@command GalantomClient getPageDonations
+}
+ * @method GuzzleResult getDonation(array $args = []) {
+@command GalantomClient getPageDonations
+}
  */
 class GalantomClient extends GuzzleClient
 {

@@ -11,6 +11,27 @@ return [
     |
     */
     'operations' => [
+        /**
+         *    Fundraising Pages / Index
+         */
+        'getDonation' => [
+            'extends' => 'abstract.token',
+            'httpMethod' => 'GET',
+            'uri' => 'donations/get',
+            'summary' => 'Get info on a donation',
+            'notes' => '',
+            'documentationUrl' => '',
+            'deprecated' => false,
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => [
+                'id' => [
+                    'location' => 'query',
+                    'type' => 'integer',
+                    'description' => 'Which fundraising page should return donations for.',
+                    'required' => true,
+                ],
+            ]
+        ],
     ],
     /*
     |--------------------------------------------------------------------------
